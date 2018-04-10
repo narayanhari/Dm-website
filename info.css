@@ -1,0 +1,176 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(Black), to(black));
+  background: linear-gradient(black, black);
+}
+a{
+    
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+nav,
+nav ul {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+nav {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+nav ul li {
+  display: table;
+  width: 100%;
+  height: calc(100% /4);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  background: #111;
+  opacity: .6;
+  border-style: outset;
+  border-width: 5px;
+    
+  -webkit-perspective: 0px;
+          perspective: 0px;
+  -webkit-transform: rotateX(-90deg) scale(0.5);
+          transform: rotateX(-90deg) scale(0.5);
+  -webkit-transition: all 0.3s ease 0.1s;
+  transition: all 0.3s ease 0.1s;
+}
+nav ul li a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-shadow: 0 0 3px ;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+}
+nav ul li a:hover {
+  background: rgba(255,255,255,0.1);
+}
+#toggle {
+  display: none;
+}
+#toggle + #toggle-btn,
+.nav-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#toggle + #toggle-btn {
+  height: 40px;
+  width: 40px;
+  z-index: 1000;
+  background: rgba(0,0,0,0.05);
+}
+.nav-icon,
+.nav-icon:before,
+.nav-icon:after {
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  margin: 18px 0;
+  z-index: 900;
+  border-radius: 3px;
+  background: #fff;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.nav-icon:before {
+  content: "";
+  margin-top: -18px;
+}
+.nav-icon:after {
+  content: "";
+  margin-top: 18px;
+}
+#toggle:checked ~ nav {
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+#toggle:checked ~ .nav-icon {
+  background: rgba(255,0,0,0);
+}
+#toggle:checked ~ .nav-icon:before {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  margin-top: 0;
+}
+#toggle:checked ~ .nav-icon:after {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  margin-top: 0;
+}
+#toggle:checked ~ nav ul li {
+  -webkit-transform: rotateY(0deg) scale(1);
+          transform: rotateY(0deg) scale(1);
+}
+#Intro {
+top:5.5%;
+
+outline: outline: 2px dashed white;
+}
+#contact {
+top:5.5%;
+
+outline: outline: 2px dashed white;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 19px;
+    font-size: 50px;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-style: outset;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
+.fa-instagram {
+    background: #fb3958;
+    color: white;
+}
+
+.Intro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
