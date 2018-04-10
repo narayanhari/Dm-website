@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 90vh;
+  height: 100%;
   background-color: #000000;
 }
 .particle-network-animation::before {
@@ -83,7 +83,7 @@
     left: 0;
     right: 0;
 }
-h1 { color: #ffffff; font-family: 'Helvetica Neue', sans-serif; font-size: 120px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;opacity: .3; }
+h1 { color: #ffffff; font-family: 'Helvetica Neue', sans-serif; font-size: 150px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;opacity: .3; }
 
 
 h2 { color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 12px; margin: 0 0 72px; text-align: center;
